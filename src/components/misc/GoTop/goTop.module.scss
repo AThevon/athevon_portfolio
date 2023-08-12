@@ -1,0 +1,13 @@
+@import "@/app/styles/variables.scss";
+@import "@/app/styles/prefix.scss";
+
+.buttonGoTop {
+   position: fixed;
+   bottom: 4rem;
+   right: 4rem;
+   width: 7rem;
+   height: 7rem;
+   border-radius: 50%;
+   background-color: $white;
+   @include prefix(box-shadow, 0 0 5px 0 rgba(0, 0, 0, 0.2));
+}

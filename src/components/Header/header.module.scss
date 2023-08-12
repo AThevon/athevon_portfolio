@@ -1,0 +1,65 @@
+@import "@/app/styles/variables.scss";
+
+.header {
+   position: relative;
+   background-color: $black2;
+   width: 100%;
+   height: 10vh;
+   top: 0;
+   z-index: 100;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-inline: 4rem;
+   transition: all 0.2s ease-out;
+   &.animate {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+   }
+   .image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+   nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+         display: flex;
+         align-items: center;
+         margin-top: 1.2rem;
+         li {
+            padding: 1rem 2rem;
+            a {
+               position: relative;
+               text-transform: uppercase;
+               color: $white;
+               font-size: 1.8rem;
+               font-weight: 600;
+               transition: all 0.2s ease-out;
+               &.active {
+                  color: $primary-color;
+               }
+               &:hover {
+                  color: $primary-color;
+               }
+               .overline {
+                  position: absolute;
+                  top: -2.4rem;
+                  left: 0;
+                  width: 100%;
+                  svg {
+                     position: absolute;
+                     left: 50%;
+                     top: 0;
+                     transform: translateX(-50%);
+                     width: 2rem;
+                     height: 2rem;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
