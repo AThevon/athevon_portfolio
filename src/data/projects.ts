@@ -5,40 +5,32 @@ export const projectsData: ProjectDTO[] = [
       id: 1,
       title: "French Wood Factory",
       description:
-         "Configurateur de Trophées et Médailles",
+         "Configurator for trophies and medals made of wood, for all your events",
       image: "/background_coque_en_bois.jpg",
       logo: "/logo_coque_en_bois.svg",
    },
    {
       id: 2,
-      title: "Project 2",
+      title: "Visual Xperience",
       description:
-         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      image: "/background_coque_en_bois.jpg",
-      logo: "/logo_coque_en_bois.svg",
+         "Use of Three.js for create interactive 3D environment",
+      image: "/background-three.png",
+      logo: "/logo-three.svg",
    },
    {
       id: 3,
-      title: "Project 3",
+      title: "Portfolio Digital Marketing",
       description:
-         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      image: "/background_coque_en_bois.jpg",
-      logo: "/logo_coque_en_bois.svg",
+         "Portfolio of Théo Perrin, digital marketing specialist",
+      image: "/background-portfolio.png",
+      logo: "/logo-next.svg",
    },
    {
       id: 4,
-      title: "Project 4",
+      title: "Tic Tac Toe",
       description:
-         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      image: "/background_coque_en_bois.jpg",
-      logo: "/logo_coque_en_bois.svg",
+         "Tic Tac Toe game with React.js",
+      image: "/background-tictactoe.png",
+      logo: "/logo-tictactoe.svg",
    },
-   {
-      id: 5,
-      title: "Project 5",
-      description:
-         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      image: "/background_coque_en_bois.jpg",
-      logo: "/logo_coque_en_bois.svg",
-   }
 ];

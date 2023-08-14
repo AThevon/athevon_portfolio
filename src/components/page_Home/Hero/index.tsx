@@ -1,4 +1,4 @@
-import Scene3d from './Scene3d';
+import Scene3d from '../Scene3d';
 import styles from './hero.module.scss';
 
 const Hero = () => {

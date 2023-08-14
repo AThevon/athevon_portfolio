@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Header from "../Header";
-import GoTop from "../misc/GoTop";
+import Header from "../../Header";
+import GoTop from "../GoTop";
 
 const xAxisVariants = {
    initial: {

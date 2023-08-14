@@ -2,7 +2,7 @@ import styles from "./logo.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export const Logo: React.FC = () => {
+const Logo = () => {
    return (
       <motion.div className={styles.logo}>
          <Image

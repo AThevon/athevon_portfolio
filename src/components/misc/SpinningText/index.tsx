@@ -1,8 +1,7 @@
-import styles from "./spinningText.module.scss";
 import { motion, useTime, useTransform } from "framer-motion";
 import ReactCurvedText from "react-curved-text";
 
-const SpinningText: React.FC = () => {
+const SpinningText = () => {
    const time = useTime();
    const rotate = useTransform(time, [0, 25000], [0, 360], { clamp: false });
    return (

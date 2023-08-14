@@ -1,7 +1,6 @@
-"use client";
-import { PageWrapper } from "@/components/PageWrapper";
+import { PageWrapper } from "@/components/misc/PageWrapper";
 import styles from "./home.module.scss";
-import Hero from "@/components/Hero";
+import Hero from "@/components/page_Home/Hero";
 
 export default function Home() {
    return (

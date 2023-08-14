@@ -1,5 +1,3 @@
-@import "@/app/styles/variables.scss";
-
 .projects_hero {
    height: 90vh;
 }
@@ -8,53 +6,14 @@
    ul {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-
-      li {
+      li:last-child {
+         background-color: rgb(66, 66, 66);
          position: relative;
          overflow: hidden;
          height: 40rem;
          cursor: pointer;
          transition: all 0.2s ease-out;
-         .background {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-            filter: brightness(0.6);
-            transition: all 0.2s ease-out;
-         }
-         &:hover {
-            .background {
-               filter: brightness(0.4);
-            }
-         }
-         .logo_container {
-            position: relative;
-            width: auto;
-               position: absolute;
-            .logo {
-               object-fit: contain;
-            }
-         }
-         h2,
-         p {
-            position: absolute;
-            bottom: 6%;
-            left: 50%;
-            transform: translateX(-50%);
-            color: $white;
-            width: 100%;
-            text-align: end;
-            padding-right: 3rem;
-
-         }
-         &:last-child {
-            background-color: rgb(66, 66, 66);
-            cursor: default;
-         }
+         cursor: default;
       }
    }
 }

@@ -1,41 +1,41 @@
-"use client";
-
 import styles from "./header.module.scss";
-import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import Logo from "./Logo";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-   faFlaskVial,
    faHouseChimney,
+   faFlaskVial,
    faCode,
+   faAddressCard,
+   faBoltLightning,
 } from "@fortawesome/free-solid-svg-icons";
+import Navlink from "./NavLink";
 
 const Header = () => {
-   const path = usePathname();
    const links = [
       {
          name: "Home",
          path: "/",
+         icon: faHouseChimney,
       },
       {
          name: "Projects",
          path: "/projects",
+         icon: faFlaskVial,
       },
       {
          name: "Skills",
          path: "/skills",
+         icon: faCode,
       },
       {
          name: "About",
          path: "/about",
+         icon: faBoltLightning,
       },
       {
          name: "Contact",
          path: "/contact",
-      }
-
+         icon: faAddressCard,
+      },
    ];
 
    return (
@@ -45,32 +45,8 @@ const Header = () => {
          </div>
          <nav>
             <ul>
-               {links.map((link) => (
-                  <motion.li key={link.path} whileTap={{ scale: 0.9 }}>
-                     <Link
-                        href={link.path}
-                        className={path === link.path ? styles.active : ""}
-                     >
-                        {path === link.path && (
-                           <motion.span
-                              className={styles.overline}
-                              layoutId="overline"
-                              transition={{ duration: 0.3 }}
-                           >
-                              <AnimatePresence>
-                                 {path === "/" ? (
-                                    <FontAwesomeIcon icon={faHouseChimney} />
-                                 ) : path === "/projects" ? (
-                                    <FontAwesomeIcon icon={faFlaskVial} />
-                                 ) : path === "/skills" ? (
-                                    <FontAwesomeIcon icon={faCode} />
-                                 ) : null}
-                              </AnimatePresence>
-                           </motion.span>
-                        )}
-                        {link.name}
-                     </Link>
-                  </motion.li>
+               {links.map((link, index) => (
+                  <Navlink key={index} index={index} link={link} />
                ))}
             </ul>
          </nav>

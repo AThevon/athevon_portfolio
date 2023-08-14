@@ -1,10 +1,10 @@
-import { PageWrapper } from "@/components/PageWrapper";
-import styles from "./projects.module.scss";
+import { PageWrapper } from "@/components/misc/PageWrapper";
+import styles from "./skills.module.scss";
 
 const Skills = () => {
    return (
       <PageWrapper>
-         <section className={styles.projects}>
+         <section className={styles.skills}>
             <h1>Skills</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sit explicabo quas ex est veniam necessitatibus sint, architecto, voluptatibus rem consequuntur laudantium aspernatur deleniti sunt placeat molestiae. Vitae, sunt labore!
             Quidem quasi reiciendis eveniet! Voluptates, blanditiis. Eum corrupti reprehenderit natus perspiciatis maxime saepe ab tenetur earum nostrum? Eum odio sequi vero beatae cum omnis, nihil autem nisi quaerat, ipsam iste?

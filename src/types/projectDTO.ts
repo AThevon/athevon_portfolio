@@ -1,4 +1,4 @@
-export interface ProjectDTO {
+export type ProjectDTO = {
    id: number;
    title: string;
    description: string;
