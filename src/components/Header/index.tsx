@@ -40,13 +40,14 @@ const Header = () => {
 
    return (
       <header className={styles.header}>
-         <div className={styles.image}>
+         <h1>Adrien Thevon</h1>
+         <div className={styles.logo}>
             <Logo />
          </div>
          <nav>
             <ul>
                {links.map((link, index) => (
-                  <Navlink key={index} index={index} link={link} />
+                  <Navlink key={index} link={link} />
                ))}
             </ul>
          </nav>

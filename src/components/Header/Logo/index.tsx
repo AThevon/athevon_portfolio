@@ -1,17 +1,13 @@
-import styles from "./logo.module.scss";
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 const Logo = () => {
    return (
-      <motion.div className={styles.logo}>
-         <Image
-            src="/logo-athevon-rounded.png"
-            alt="Adrien Thevon"
-            width={60}
-            height={60}
-         />
-      </motion.div>
+      <Image
+         src="/logo-athevon-rounded.png"
+         alt="Adrien Thevon"
+         width={100}
+         height={100}
+      />
    );
 };
 

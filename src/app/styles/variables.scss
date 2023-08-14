@@ -1,16 +1,17 @@
-$primary-color: #2559FF;
-$secondary-color: #343B57;
-$tertiary-color: #C58F2A;
-$black: #101010;
-$black2: #232323;
+$main-color: #ECD957;
+$second-color: #CB8651;
+$third-color: #5C5C5C;
+$black: #232323;
+$black2: #101010;
 $white: #F4F4F4;
-$light-grey: #CFCFCF;
-$dark-grey: #484848;
+$lightgrey: #9f9f9f;
+$darkgrey: #484848;
 
-$blue-gradient: linear-gradient(-45deg, rgba(37, 89, 255, 1) 0%, rgba(39, 68, 162, 1) 100%);
+$main-gradient: linear-gradient(to right top, #ecd957, #eac853, #e6b852, #e0a851, #d89951, #d48a5a, #cc7d63, #be736b, #a66c78, #896879, #6d636f, #5c5c5c);
 
 $main-font: var(--main-font);
 $second-font: var(--second-font);
+$third-font: var(--third-font);
 
 $xxl: 5.1rem;
 $xl: 3.8rem;

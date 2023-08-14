@@ -3,8 +3,8 @@
 :root {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, Montserrat, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	line-height: 1.5;
-	color: $black;
-   background-color: $white;
+	color: $white;
+   background-color: $black;
 
 	/* font-synthesis: none; */
 	text-rendering: optimizeLegibility;
@@ -14,5 +14,12 @@
 }
 
 body {
-   font-family: $second-font;
+   overflow-x: hidden;
+   font-family: $main-font;
+   h1, h2, h3, h4, h5, h6 {
+      font-family: $second-font;
+   }
+   h1 {
+      text-transform: uppercase;
+   }
 }

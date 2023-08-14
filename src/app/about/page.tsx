@@ -3,9 +3,9 @@ import { PageWrapper } from "@/components/misc/PageWrapper";
 const About = () => {
    return (
       <PageWrapper>
-         <div>
+         <section>
             <h1>About</h1>
-         </div>
+         </section>
       </PageWrapper>
    );
 };

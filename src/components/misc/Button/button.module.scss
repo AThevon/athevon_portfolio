@@ -1,0 +1,15 @@
+@import "@/app/styles/variables.scss";
+
+.button {
+      background-color: #fff;
+      border: 1px solid #000;
+      border-radius: 5px;
+      // background-image: $main-gradient;
+      background: $main-color;
+      color: #000;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 700;
+      padding: 1rem 3rem;
+}

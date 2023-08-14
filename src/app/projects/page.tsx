@@ -19,9 +19,6 @@ const Projects = () => {
                         index={index}
                      />
                   ))}
-                  <li>
-                     <h3>Coming Soon</h3>
-                  </li>
                </ul>
             </div>
          </section>

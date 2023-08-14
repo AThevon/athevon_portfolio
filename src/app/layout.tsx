@@ -4,23 +4,33 @@ import "./styles/reset.scss";
 
 import type { Metadata } from "next";
 
-import { Montserrat, Russo_One } from "next/font/google";
+import { Changa, Permanent_Marker, Poppins } from "next/font/google";
 
-const mainFont = Russo_One({
-   weight: "400",
-   style: "normal",
+const mainFont = Poppins({
+   weight: ["300", "400", "500", "600", "700"],
+   style: ["normal", "italic"],
    variable: "--main-font",
    subsets: ["latin"],
    display: "swap",
 });
 
-const secondFont = Montserrat({
+const secondFont = Changa({
    weight: ["300", "400", "500", "600", "700"],
-   style: ["normal", "italic"],
+   style: "normal",
    variable: "--second-font",
    subsets: ["latin"],
    display: "swap",
 });
+
+const thirdFont = Permanent_Marker({
+   weight: ["400"],
+   style: ["normal"],
+   variable: "--third-font",
+   subsets: ["latin"],
+   display: "swap",
+});
+
+const fontVariables = `${mainFont.variable} ${secondFont.variable} ${thirdFont.variable}`;
 
 export const metadata: Metadata = {
    title: "Adrien Thevon - Portfolio",
@@ -34,9 +44,7 @@ export default function RootLayout({
 }) {
    return (
       <html lang="en">
-         <body className={`${mainFont.variable} ${secondFont.variable}`}>
-            {children}
-         </body>
+         <body className={fontVariables}>{children}</body>
       </html>
    );
 }

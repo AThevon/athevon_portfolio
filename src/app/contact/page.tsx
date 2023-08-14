@@ -3,9 +3,9 @@ import { PageWrapper } from "@/components/misc/PageWrapper";
 const Contact = () => {
    return (
       <PageWrapper>
-         <div>
+         <section>
             <h1>Contact</h1>
-         </div>
+         </section>
       </PageWrapper>
    );
 };
