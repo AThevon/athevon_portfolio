@@ -5,7 +5,7 @@ import Hero from "@/components/page_Home/Hero";
 export default function Home() {
    return (
       <PageWrapper>
-         <section className={styles.home}>
+         <section className={`${styles.home} container`}>
             <Hero />
          </section>
       </PageWrapper>

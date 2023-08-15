@@ -40,7 +40,10 @@ const Header = () => {
 
    return (
       <header className={styles.header}>
-         <h1>Adrien Thevon</h1>
+         <div className={styles.name}>
+            <h1>Adrien Thevon</h1>
+            <h2>Web Developer</h2>
+         </div>
          <div className={styles.logo}>
             <Logo />
          </div>

@@ -7,7 +7,7 @@ $white: #F4F4F4;
 $lightgrey: #9f9f9f;
 $darkgrey: #484848;
 
-$main-gradient: linear-gradient(to right top, #ecd957, #eac853, #e6b852, #e0a851, #d89951, #d48a5a, #cc7d63, #be736b, #a66c78, #896879, #6d636f, #5c5c5c);
+$main-gradient: linear-gradient(90deg, hsla(52, 80%, 63%, 1) 0%, hsla(38, 100%, 67%, 1) 100%);
 
 $main-font: var(--main-font);
 $second-font: var(--second-font);

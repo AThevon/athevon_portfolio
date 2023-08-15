@@ -9,18 +9,30 @@ type ButtonProps = {
    type?: "button" | "submit" | "reset" | undefined;
    children?: React.ReactNode;
    className?: string;
+   classButton?: boolean;
+   classCTA?: boolean;
    isLink?: boolean;
    href?: Url;
 };
 
-const Button = ({ type, children, className, isLink, href }: ButtonProps) => {
+const Button = ({
+   type,
+   children,
+   className,
+   classButton,
+   classCTA,
+   isLink,
+   href,
+}: ButtonProps) => {
    if (isLink && href) {
       return (
          <Link href={href}>
             <motion.button
                type={type}
-               className={`${styles.button} ${className}`}
-               whileTap={{ scale: 0.9 }}
+               className={`${className} ${classButton ? styles.button : ""} ${
+                  classCTA ? styles.cta : ""
+               }`}
+               whileTap={{ scale: 0.94 }}
                whileHover={{ scale: 1.04 }}
             >
                {children}
@@ -31,8 +43,11 @@ const Button = ({ type, children, className, isLink, href }: ButtonProps) => {
       return (
          <motion.button
             type={type}
-            className={`${styles.button} ${className}`}
-            whileTap={{ scale: 0.9 }}
+            className={`${className} ${classButton ? styles.button : ""} ${
+               classCTA ? styles.cta : ""
+            }`}
+            whileTap={{ scale: 0.94 }}
+            whileHover={{ scale: 1.04 }}
          >
             {children}
          </motion.button>

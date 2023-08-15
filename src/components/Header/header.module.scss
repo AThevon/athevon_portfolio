@@ -1,4 +1,5 @@
 @import "@/app/styles/variables.scss";
+@import "@/app/styles/mixins.scss";
 
 .header {
    position: relative;
@@ -11,10 +12,34 @@
    justify-content: space-between;
    padding-inline: 4rem;
    transition: all 0.2s ease-out;
-   h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      font-family: $second-font;
+   .name {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      h1 {
+         position: relative;
+         font-size: 3rem;
+         font-weight: 700;
+         font-family: $main-font;
+         &::after {
+            content: "";
+            position: absolute;
+            bottom: 0.2rem;
+            right: 0;
+            width: 80%;
+            height: 0.2rem;
+            border-radius: 5px;
+            background-color: $main-color;
+            @include prefix(background-image, $main-gradient);
+         }
+      }
+      h2 {
+         line-height: 1;
+         font-family: $second-font;
+         color: $lightgrey;
+         font-weight: 500;
+
+      }
    }
    .logo {
       position: absolute;

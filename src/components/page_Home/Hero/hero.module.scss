@@ -6,22 +6,39 @@
    margin-inline: auto;
    .text {
       width: 50%;
-      h1 {
-         font-size: 7rem;
-         font-weight: 700;
-         margin-top: 8rem;
-      }
-      h3 {
-         font-size: 4rem;
-         font-weight: 700;
-         font-family: $third-font;
-      }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      line-height: 1.1;
+
       h2 {
          font-size: 5rem;
          font-weight: 400;
+         font-family: $main-font;
+      }
+      h3 {
+         position: relative;
+         margin-bottom: 1rem;
+         font-size: 5rem;
+         font-weight: 400;
+         font-family: $main-font;
          span {
-            font-family: $main-font;
+            font-size: 7rem;
+            font-family: $third-font;
          }
+         svg {
+            position: absolute;
+            bottom: -4rem;
+            left: -3rem;
+            width: 24rem;
+            height: 10rem;
+         }
+      }
+      h4 {
+         font-size: 4rem;
+         font-weight: 500;
+         font-family: $second-font;
       }
    }
    .images {
