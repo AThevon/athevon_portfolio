@@ -4,14 +4,15 @@
 .button,
 .cta {
    position: relative;
-   padding: 1.2rem 5rem;
-   font-size: 2.2rem;
+   padding: 1.8rem 7rem;
+   line-height: 1;
+   font-size: 2.5rem;
    font-weight: 700;
    border-radius: 10px;
    text-transform: uppercase;
    color: $black;
    cursor: pointer;
-   // background-color: $main-color;
+   background-color: $main-color;
    @include prefix(background-image, $main-gradient);
    font-family: $second-font;
 }

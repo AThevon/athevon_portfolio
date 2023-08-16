@@ -18,7 +18,7 @@ const Reveal = ({ children, width }: RevealProps) => {
          mainControls.start("visible");
          slideControls.start("visible");
       }
-   // eslint-disable-next-line react-hooks/exhaustive-deps
+      // eslint-disable-next-line react-hooks/exhaustive-deps
    }, [isInView]);
 
    return (

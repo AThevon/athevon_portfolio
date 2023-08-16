@@ -1,6 +1,6 @@
+import "./styles/reset.scss";
 import "./styles/globals.scss";
 import "./styles/variables.scss";
-import "./styles/reset.scss";
 
 import type { Metadata } from "next";
 
@@ -33,8 +33,8 @@ const thirdFont = Permanent_Marker({
 const fontVariables = `${mainFont.variable} ${secondFont.variable} ${thirdFont.variable}`;
 
 export const metadata: Metadata = {
-   title: "Adrien Thevon - Portfolio",
-   description: "Portfolio d'Adrien Thevon, Développeur web",
+   title: "Adrien Thevon - Web Developer",
+   description: "Portfolio of Adrien Thevon, Web Developer",
 };
 
 export default function RootLayout({

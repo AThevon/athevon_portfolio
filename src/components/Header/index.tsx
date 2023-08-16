@@ -44,9 +44,7 @@ const Header = () => {
             <h1>Adrien Thevon</h1>
             <h2>Web Developer</h2>
          </div>
-         <div className={styles.logo}>
-            <Logo />
-         </div>
+         <Logo />
          <nav>
             <ul>
                {links.map((link, index) => (
