@@ -5,12 +5,12 @@ import Image from "next/image";
 import HeroSVG from "./SVGs/HeroSVG";
 import Button from "@/components/misc/Button";
 import { motion } from "framer-motion";
-import UnderlineSVG from "./SVGs/IdeasSVG/UnderlineSVG";
 import Ideas from "./SVGs/IdeasSVG";
 
 const Hero = () => {
    return (
-      <section className={styles.hero}>
+      <section className={`${styles.hero_container} container`}>
+      <div className={styles.hero}>
          <div className={styles.text}>
             <motion.h2
                initial={{ x: -100, opacity: 0 }}
@@ -71,6 +71,7 @@ const Hero = () => {
                />
             </div>
          </div>
+      </div>
       </section>
    );
 };
