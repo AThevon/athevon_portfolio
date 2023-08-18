@@ -1,43 +1,9 @@
 import styles from "./header.module.scss";
 import Logo from "./Logo";
-import {
-   faHouseChimney,
-   faFlaskVial,
-   faCode,
-   faAddressCard,
-   faBoltLightning,
-} from "@fortawesome/free-solid-svg-icons";
 import Navlink from "./NavLink";
+import { pages as data } from "@/data/pages";
 
 const Header = () => {
-   const links = [
-      {
-         name: "Home",
-         path: "/",
-         icon: faHouseChimney,
-      },
-      {
-         name: "Projects",
-         path: "/projects",
-         icon: faFlaskVial,
-      },
-      {
-         name: "Skills",
-         path: "/skills",
-         icon: faCode,
-      },
-      {
-         name: "About",
-         path: "/about",
-         icon: faBoltLightning,
-      },
-      {
-         name: "Contact",
-         path: "/contact",
-         icon: faAddressCard,
-      },
-   ];
-
    return (
       <header className={styles.header}>
          <div className={styles.name}>
@@ -47,7 +13,7 @@ const Header = () => {
          <Logo />
          <nav>
             <ul>
-               {links.map((link, index) => (
+               {data.map((link, index) => (
                   <Navlink key={index} link={link} />
                ))}
             </ul>

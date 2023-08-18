@@ -53,10 +53,10 @@ const Hero = () => {
             <motion.div
                initial={{ scale: 0}}
                animate={{ scale: 1}}
-               transition={{ duration: 0.5, delay: 3.5 }}
+               transition={{duration: 0.5, delay: 3.5 }}
             >
                <Button isLink href="/contact" classCTA>
-                  Contact me
+                  Get in touch
                </Button>
             </motion.div>
          </div>

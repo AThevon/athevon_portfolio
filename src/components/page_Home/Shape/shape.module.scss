@@ -1,0 +1,29 @@
+@import "@/app/styles/variables.scss";
+@import "@/app/styles/mixins.scss";
+
+.shape_wrapper {
+   position: absolute;
+   z-index: -10;
+   left: 0;
+   top: 0;
+   width: 100vw;
+   height: 100vh;
+   .shape {
+      position: absolute;
+      background-image: $main-gradient;
+      border-radius: 25px;
+      @include prefix(box-shadow, 0 0 20px 0 rgba(0, 0, 0, 0.5));
+      &.left {
+         height: 80rem;
+         width: 120rem;
+         transform: rotate(15deg);
+         top: 1rem;
+      }
+      &.right {
+         height: 110rem;
+         width: 100rem;
+         transform: rotate(-15deg);
+         top: 10rem;
+      }
+   }
+}

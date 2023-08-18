@@ -13,8 +13,6 @@
       "@fortawesome/free-regular-svg-icons": "^6.4.2",
       "@fortawesome/free-solid-svg-icons": "^6.4.2",
       "@fortawesome/react-fontawesome": "^0.2.0",
-      "@react-three/drei": "^9.80.2",
-      "@react-three/fiber": "^8.13.6",
       "@types/node": "20.4.9",
       "@types/react": "18.2.20",
       "@types/react-dom": "18.2.7",
@@ -26,12 +24,10 @@
       "react-curved-text": "^2.0.2",
       "react-dom": "18.2.0",
       "react-spring": "^9.7.2",
-      "three": "^0.155.0",
       "typescript": "5.1.6"
    },
    "devDependencies": {
       "@types/react-curved-text": "^2.0.0",
-      "@types/three": "^0.155.0",
       "prettier": "^3.0.1",
       "sass": "^1.65.1"
    }

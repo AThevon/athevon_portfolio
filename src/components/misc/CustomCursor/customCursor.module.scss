@@ -1,0 +1,12 @@
+@import "@/app/styles/variables.scss";
+
+.cursor {
+   width: 3.2rem;
+   height: 3.2rem;
+   background-color: $main-color;
+   border-radius: 50%;
+   position: fixed;
+   z-index: 1000;
+   pointer-events: none;
+   
+}

@@ -1,2 +1,18 @@
-
-
+.home_content {
+   margin-top: 4rem;
+   margin-inline: auto;
+   height: 110vh;
+   .content_container {
+      width: 100%;
+      position: relative;
+      &:nth-child(1) {
+         height: 85vh;
+      }
+      .spinning_logo_container {
+         position: absolute;
+         top: -4rem;
+         left: 50%;
+         transform: translateX(-50%);
+      }
+   }
+}

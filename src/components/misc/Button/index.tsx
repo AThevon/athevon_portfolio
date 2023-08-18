@@ -26,14 +26,14 @@ const Button = ({
 }: ButtonProps) => {
    if (isLink && href) {
       return (
-         <Link href={href}>
+         <Link href={href} style={{cursor: "none"}}>
             <motion.button
                type={type}
                className={`${className} ${classButton ? styles.button : ""} ${
                   classCTA ? styles.cta : ""
                }`}
                whileTap={{ scale: 0.94 }}
-               whileHover={{ scale: 1.04 }}
+               whileHover={{ scale: 1.05 }}
             >
                {children}
             </motion.button>

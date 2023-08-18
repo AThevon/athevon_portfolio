@@ -1,5 +1,4 @@
 import UnderlineSVG from "./UnderlineSVG";
-import Underline from "./UnderlineSVG";
 import styles from "./ideas.module.scss";
 import { motion } from "framer-motion";
 

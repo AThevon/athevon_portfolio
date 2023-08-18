@@ -1,0 +1,31 @@
+@import "@/app/styles/variables.scss";
+
+.spinning_logo {
+   position: relative;
+   border-radius: 50%;
+   width: 20rem;
+   height: 20rem;
+   .image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      img {
+         object-fit: contain;
+      }
+   }
+   .hovered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -1;
+      filter: blur(4rem);
+   }
+}
