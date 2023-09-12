@@ -1,0 +1,19 @@
+@import "@/app/styles/variables.scss";
+
+.sentence_works {
+   margin-top: 10rem;
+   padding-inline: 4rem;
+   h2 {
+      display: flex;
+      flex-wrap: wrap;
+      .word {
+         padding: 1rem;
+         span {
+            font-size: 7rem;
+            font-weight: 700;
+            font-family: $main-font;
+            cursor: default;
+         }
+      }
+   }
+}

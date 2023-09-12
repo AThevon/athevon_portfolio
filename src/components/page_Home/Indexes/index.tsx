@@ -30,7 +30,7 @@ const Indexes = () => {
                   <motion.li
                      key={index}
                      initial={{ scale: 0, opacity: 0 }}
-                     whileInView={{ scale: 1, opacity: 1 }}
+                     whileInView={{ scale: 1, opacity: 1, y: [0, 20, 0] }}
                      whileHover={{
                         scale: 1.1,
                         boxShadow: "0px 8px 20px 0 rgba(0, 0, 0, 0.5)",
@@ -41,6 +41,13 @@ const Indexes = () => {
                         stiffness: 400,
                         damping: 35,
                         mass: 2,
+                        y: {
+                           type: "tween",
+                           repeat: Infinity,
+                           delay: index * 1,
+                           repeatType: "mirror",
+                           duration: 6,
+                        },
                      }}
                      onHoverStart={() => setHovered(index)}
                      onHoverEnd={() => setHovered(null)}
