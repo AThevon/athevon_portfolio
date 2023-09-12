@@ -1,0 +1,11 @@
+.contact {
+   height: 80vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-inline: 12rem;
+   .networks {
+      display: flex;
+      gap: 2rem;
+   }
+}

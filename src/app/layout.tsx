@@ -5,6 +5,8 @@ import "./styles/variables.scss";
 import type { Metadata } from "next";
 
 import { Changa, Permanent_Marker, Poppins } from "next/font/google";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const mainFont = Poppins({
    weight: ["300", "400", "500", "600", "700"],
@@ -44,7 +46,10 @@ export default function RootLayout({
 }) {
    return (
       <html lang="en">
-         <body className={fontVariables}>{children}</body>
+         <body className={fontVariables}>
+            {children}
+            <ToastContainer />
+         </body>
       </html>
    );
 }

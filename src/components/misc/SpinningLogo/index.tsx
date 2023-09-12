@@ -13,12 +13,23 @@ type SpinningLogoProps = {
    href: string;
    alt: string;
    isLink?: boolean;
+   isPDF?: boolean;
    onClick?: () => void;
    text: string;
    letterSpacing: string;
 };
 
-const SpinningLogo = ({ image, bgColor, href, alt, isLink, onClick, text, letterSpacing }: SpinningLogoProps) => {
+const SpinningLogo = ({
+   image,
+   bgColor,
+   href,
+   alt,
+   isLink,
+   isPDF,
+   onClick,
+   text,
+   letterSpacing,
+}: SpinningLogoProps) => {
    const [isHovered, setIsHovered] = useState(false);
 
    return (
@@ -38,10 +49,7 @@ const SpinningLogo = ({ image, bgColor, href, alt, isLink, onClick, text, letter
             damping: 20,
          }}
       >
-         <SpinningText 
-            text={text}
-            letterSpacing={letterSpacing}
-         />
+         <SpinningText text={text} letterSpacing={letterSpacing} />
          <motion.div
             className={styles.image}
             initial={{ scale: 0.75 }}
@@ -58,11 +66,23 @@ const SpinningLogo = ({ image, bgColor, href, alt, isLink, onClick, text, letter
             }}
          >
             {isLink ? (
-            <Link href={href} target="_blank">
-               <Image src={image} alt={alt} width={200} height={200} />
-            </Link>
+               <Link href={href} target="_blank">
+                  <Image src={image} alt={alt} width={200} height={200} />
+               </Link>
+            ) : isPDF ? (
+               <Link href={href} passHref legacyBehavior>
+                  <a target="_blank" rel="noopener noreferrer">
+                     <Image src={image} alt={alt} width={200} height={200} />
+                  </a>
+               </Link>
             ) : (
-               <Image src={image} alt={alt} width={200} height={200} onClick={onClick}/>
+               <Image
+                  src={image}
+                  alt={alt}
+                  width={200}
+                  height={200}
+                  onClick={onClick}
+               />
             )}
          </motion.div>
          <AnimatePresence>
