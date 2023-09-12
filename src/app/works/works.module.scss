@@ -2,6 +2,9 @@
 
 .works_hero {
    height: 90vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .works_content {
@@ -16,5 +19,18 @@
          transition: all 0.2s ease-out;
          cursor: default;
       }
+   }
+}
+
+.works_footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-block: 10rem;
+   p {
+      font-size: 3rem;
+      background-color: $third-color;
+      padding: 8rem 10rem;
+      border-radius: 5rem;
    }
 }

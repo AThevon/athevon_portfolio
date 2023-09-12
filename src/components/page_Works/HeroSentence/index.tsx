@@ -6,20 +6,30 @@ import { motion } from "framer-motion";
 const HeroSentence = () => {
    const heroText = [
       "Crafting ",
-      "digital ",
+      "web ",
       "experiences ",
       "that ",
-      "blend ",
-      "innovation, ",
-      "functionality, ",
-      "and ",
-      "elegance ",
-      "into ",
-      "every ",
-      "line ",
-      "of ",
-      "code.",
+      "stand ",
+      "out.",
    ];
+
+   const textVariants = {
+      hidden: {
+         opacity: 0.5,
+         y: 0,
+         skewY: 0,
+      },
+      visible: {
+         opacity: 1,
+         y: -5,
+         skewY: 0,
+      },
+      perspective: {
+         opacity: 1,
+         y: -5,
+         skewY: -7,
+      },
+   };
 
    return (
       <div className={styles.sentence_works}>
@@ -28,8 +38,9 @@ const HeroSentence = () => {
                <motion.div
                   key={index}
                   className={styles.word}
-                  initial={{ opacity: 0.5, y: 0 }}
-                  whileHover={{ opacity: 1, y: -5 }}
+                  variants={textVariants}
+                  initial="hidden"
+                  whileHover={index === 2 ? "perspective" : "visible"}
                >
                   <span>{word}</span>
                </motion.div>

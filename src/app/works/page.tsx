@@ -2,11 +2,9 @@ import styles from "./works.module.scss";
 import { PageWrapper } from "@/components/misc/PageWrapper";
 import { worksData as data } from "@/data/works";
 import WorksTile from "@/components/page_Works/WorksTile";
-import { motion } from "framer-motion";
 import HeroSentence from "@/components/page_Works/HeroSentence";
 
 const Works = () => {
-
    return (
       <PageWrapper yAxis>
          <section className={styles.works}>
@@ -19,6 +17,9 @@ const Works = () => {
                      <WorksTile key={work.id} work={work} index={index} />
                   ))}
                </ul>
+            </div>
+            <div className={styles.works_footer}>
+               <p>More coming soon...</p>
             </div>
          </section>
       </PageWrapper>

@@ -2,12 +2,14 @@
 
 .horizontal_scroll {
    position: relative;
-   height: 500vh;
+   height: 600vh;
+   padding-inline: 5rem;
    // background-color: $darkgrey;
    .horizontal_scroll_container {
       position: sticky;
       top: 0;
       height: 100vh;
+      padding-top: 10rem;
       .content_wrapper {
          position: relative;
          height: 100%;
@@ -28,12 +30,10 @@
                text-transform: uppercase;
                white-space: nowrap;
                font-family: $third_font;
+               z-index: 10;
             }
             .image {
                overflow: hidden;
-               border-radius: 25px;
-               width: 40rem;
-               height: 40rem;
                img {
                   object-fit: contain;
                }
@@ -41,9 +41,9 @@
          }
          .background_svg {
             position: absolute;
-            bottom: 0;
+            bottom: -3rem;
             left: 0;
-            width: 500vw;
+            width: 1200vw;
             height: 100%;
             z-index: -1;
             img {

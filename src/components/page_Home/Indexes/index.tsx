@@ -42,7 +42,6 @@ const Indexes = () => {
                         damping: 35,
                         mass: 2,
                         y: {
-                           type: "tween",
                            repeat: Infinity,
                            delay: index * 1,
                            repeatType: "mirror",
