@@ -70,11 +70,14 @@ const HorizontalScroll = () => {
                         height={500}
                      />
                   </motion.div>
-                  <motion.h2 style={{ scale: scale3 }}>curiosity and</motion.h2>
+                  <motion.h2 style={{ scale: scale3 }}>curiosity</motion.h2>
                </div>
                <div className={styles.content}>
                   <motion.h2 style={{ scale: scale4 }}>creativity</motion.h2>
-                  <motion.div className={styles.image} style={{ x: x2, y: "-10rem" }}>
+                  <motion.div
+                     className={styles.image}
+                     style={{ x: x2, y: "-10rem" }}
+                  >
                      <Image
                         src="/webdev_about.png"
                         alt=""
@@ -82,6 +85,11 @@ const HorizontalScroll = () => {
                         height={500}
                      />
                   </motion.div>
+               </div>
+               <div className={styles.content}>
+                  <motion.h2 style={{ scale: scale3, x: "20rem", y: "40rem" }}>
+                     and hard work
+                  </motion.h2>
                </div>
                <motion.div
                   className={styles.background_svg}

@@ -141,7 +141,10 @@ const ContactForm = () => {
                   id="name"
                   placeholder="Your name"
                   required
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  value={formData.name}
+                  onChange={(e) =>
+                     setFormData({ ...formData, name: e.target.value })
+                  }
                />
             </div>
             <div className={styles.form_group}>
@@ -164,7 +167,10 @@ const ContactForm = () => {
                   placeholder="Your email"
                   autoComplete="email"
                   required
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  value={formData.email}
+                  onChange={(e) =>
+                     setFormData({ ...formData, email: e.target.value })
+                  }
                />
             </div>
             <div className={styles.form_group}>
@@ -185,12 +191,27 @@ const ContactForm = () => {
                   id="message"
                   placeholder="Your message"
                   required
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  value={formData.message}
+                  onChange={(e) =>
+                     setFormData({ ...formData, message: e.target.value })
+                  }
                ></motion.textarea>
             </div>
-            <Button type="submit" classCTA>
-               Send
-            </Button>
+            <motion.div
+               initial={{ opacity: 0, y: "30vh" }}
+               animate={{ opacity: 1, y: 0 }}
+               style={{ width: "100%" }}
+               transition={{
+                  type: "spring",
+                  mass: 1.2,
+                  damping: 18,
+                  delay: 1.7,
+               }}
+            >
+               <Button type="submit" classCTA>
+                  Send
+               </Button>
+            </motion.div>
          </form>
       </div>
    );

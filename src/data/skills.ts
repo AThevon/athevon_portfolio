@@ -1,6 +1,6 @@
 import { SkillType, SkillsDTO } from "@/types/skillsDTO";
 
-export const worksData: SkillsDTO[] = [
+export const skillsData: SkillsDTO[] = [
    {
       id: 1,
       type: SkillType.FRONT,

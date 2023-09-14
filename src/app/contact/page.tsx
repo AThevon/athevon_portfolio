@@ -19,7 +19,7 @@ const Contact = () => {
                   mass: 1,
                   damping: 18,
                   stiffness: 100,
-                  delay: 2,
+                  delay: 1.2,
                }}
             >
                <SpinningLogo
