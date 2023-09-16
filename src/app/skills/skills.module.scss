@@ -1,8 +1,10 @@
 .skills {
+   padding: 4rem;
    .skillsContainer {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      grid-gap: 1rem;
+      grid-gap: 2rem;
+      margin: 0 auto;
    }
 }
 

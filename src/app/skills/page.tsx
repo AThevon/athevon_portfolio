@@ -6,7 +6,7 @@ import SkillCard from "@/components/page_Skills/SkillCard";
 
 const Skills = () => {
    return (
-      <PageWrapper>
+      <PageWrapper yAxis>
          <section className={styles.skills}>
             <div className={styles.skillsContainer}>
                {data.map((skill, index) => (
@@ -17,6 +17,7 @@ const Skills = () => {
                         name={skill.name}
                         description={skill.description}
                         affinity={skill.affinity}
+                        gradient={skill.gradient}
                      />
                   </Fragment>
                ))}

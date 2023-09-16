@@ -1,10 +1,35 @@
 @import "@/app/styles/variables.scss";
+@import "@/app/styles/mixins.scss";
 
 .skillCard {
-   background-color: $darkgrey;
-   margin-bottom: 2rem;
+   position: relative;
+   overflow: hidden;
    padding: 2rem;
-   border-radius: 15px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
+   height: 35rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 16px;
+   @include prefix(box-shadow, 0 4px 30px rgba(0, 0, 0, 0.1));
+   @include prefix(backdrop-filter, blur(5.8px));
+   border: 1px solid rgba(255, 255, 255, 0.46);
+   img {
+      height: 10rem;
+      width: 10rem;
+      object-fit: contain;
+      border-radius: 15px;
+   }
+   .skillType {
+      position: absolute;
+      bottom: -1rem;
+      right: -1rem;
+      width: 10rem;
+      height: 10rem;
+      rotate: -25deg;
+      z-index: -100;
+      svg {
+         color: $white;
+      }
+   }
 }

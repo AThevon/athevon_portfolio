@@ -14,4 +14,5 @@ export type SkillsDTO = {
    name: string;
    description: string;
    affinity?: string;
+   gradient?: string;
 }
