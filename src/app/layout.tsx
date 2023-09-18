@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 import { Changa, Permanent_Marker, Poppins } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Head from "next/head";
 
 const mainFont = Poppins({
    weight: ["300", "400", "500", "600", "700"],
@@ -37,6 +38,21 @@ const fontVariables = `${mainFont.variable} ${secondFont.variable} ${thirdFont.v
 export const metadata: Metadata = {
    title: "Adrien Thevon - Web Developer",
    description: "Portfolio of Adrien Thevon, Web Developer",
+   openGraph: {
+      type: "website",
+      locale: "en_IE",
+      url: "https://athevon.com",
+      title: "Adrien Thevon - Web Developer",
+      description: "Portfolio of Adrien Thevon, Web Developer",
+      images: [
+         {
+            url: "/logo-athevon.png",
+            width: 600,
+            height: 600,
+            alt: "Adrien Thevon - Web Developer",
+         },
+      ],
+   },
 };
 
 export default function RootLayout({
