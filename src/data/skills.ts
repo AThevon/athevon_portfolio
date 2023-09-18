@@ -102,7 +102,7 @@ export const skillsData: SkillsDTO[] = [
    {
       id: 12,
       type: SkillType.FRONT,
-      logo: "/skillsLogos/logo-framer-motion.svg",
+      logo: "/skillsLogos/logo-framer-motion.png",
       name: "Framer Motion",
       description:
          "Framer Motion is a production-ready motion library for React.",
@@ -113,7 +113,7 @@ export const skillsData: SkillsDTO[] = [
    {
       id: 13,
       type: SkillType.FRONT,
-      logo: "/skillsLogos/logo-react-spring.svg",
+      logo: "/skillsLogos/logo-react-spring.png",
       name: "React Spring",
       description:
          "React Spring is a spring-physics based animation library that should cover most of your UI related animation needs.",
