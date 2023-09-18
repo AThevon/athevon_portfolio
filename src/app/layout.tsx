@@ -41,7 +41,7 @@ export const metadata: Metadata = {
    openGraph: {
       type: "website",
       locale: "en_IE",
-      url: "https://athevon.com",
+      url: "https://athevon.fr",
       title: "Adrien Thevon - Web Developer",
       description: "Portfolio of Adrien Thevon, Web Developer",
       images: [
