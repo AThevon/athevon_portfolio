@@ -46,9 +46,9 @@ export const metadata: Metadata = {
       description: "Portfolio of Adrien Thevon, Web Developer",
       images: [
          {
-            url: "/logo-athevon.png",
-            width: 600,
-            height: 600,
+            url: "https://postimg.cc/hfXzqmPS",
+            width: 3000,
+            height: 1800,
             alt: "Adrien Thevon - Web Developer",
          },
       ],
