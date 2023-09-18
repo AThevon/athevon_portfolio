@@ -40,10 +40,9 @@ export const metadata: Metadata = {
    description: "Portfolio of Adrien Thevon, Web Developer",
    openGraph: {
       type: "website",
-      locale: "en_IE",
       url: "https://athevon.fr",
       title: "Adrien Thevon - Web Developer",
-      description: "Portfolio of Adrien Thevon, Web Developer",
+      description: "Portfolio of Adrien Thevon, React Web Developer",
       images: [
          {
             url: "https://postimg.cc/hfXzqmPS",
