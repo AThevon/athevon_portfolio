@@ -1,0 +1,91 @@
+@import "@/app/styles/variables.scss";
+
+.work {
+   padding-top: 4rem;
+   padding-inline: 8rem;
+   &_header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+      span {
+         width: 1rem;
+         height: 12rem;
+      }
+      h1 {
+         font-size: 3rem;
+         font-weight: 700;
+      }
+      &_links {
+         margin-left: auto;
+         display: flex;
+         align-items: center;
+         gap: 2rem;
+         svg {
+            width: 3.5rem;
+            height: 3.5rem;
+         }
+         a {
+            padding: 2rem 6rem;
+            border-radius: 10px;
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: $white;
+            transition: all 0.2s ease-out;
+            &.enabled {
+               &:hover {
+                  opacity: 0.8;
+               }
+               &:active {
+                  opacity: 0.6;
+               }
+            }
+            &.disabled {
+               background-color: $darkgrey;
+               cursor: not-allowed;
+               color: $lightgrey;
+            }
+         }
+      }
+   }
+   &_content {
+      &_overview {
+         overflow: hidden;
+         border-radius: 20px;
+         margin: 8rem auto;
+         img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+         }
+      }
+      &_details {
+         margin-bottom: 12rem;
+         h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+         }
+         ul {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 7rem;
+            li {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               width: 16rem;
+               margin-bottom: 2rem;
+               font-size: 2.6rem;
+               font-weight: 700;
+               font-family: $second-font;
+               span {
+                  font-weight: 400;
+               }
+            }
+         }
+      }
+   }
+}

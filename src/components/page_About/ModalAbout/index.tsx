@@ -88,8 +88,8 @@ const ModalAbout = () => {
                      </li>
                      <li>
                         <Image
-                           src="/logo-athevon.png"
-                           alt="Athevon logo"
+                           src="/icon-boxe.png"
+                           alt="Boxe logo"
                            width={50}
                            height={50}
                         />
