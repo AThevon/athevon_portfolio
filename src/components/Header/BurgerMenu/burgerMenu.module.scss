@@ -1,0 +1,91 @@
+@import "@/app/styles/variables.scss";
+@import "@/app/styles/mixins.scss";
+
+.burger {
+   position: absolute;
+   top: 4rem;
+   right: 2rem;
+   button {
+      position: absolute;
+      z-index: 1000;
+      top: 0;
+      right: 0;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      height: 6rem;
+      justify-content: space-around;
+      padding: 0;
+      position: relative;
+      width: 6rem;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      &::before,
+      &::after {
+         content: "";
+         background: $white;
+         border-radius: 10px;
+         display: block;
+         height: 3px;
+         position: relative;
+         transition: all 0.3s linear;
+         transform-origin: 1px;
+         width: 4rem;
+      }
+      &.open {
+         &::before {
+            transform: rotate(45deg) translateY(-1rem);
+            width: 4rem;
+         }
+         &::after {
+            transform: rotate(-45deg) translateY(1rem);
+            width: 4rem;
+         }
+      }
+   }
+
+   .nav_container {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      background-color: $darkgrey;
+      width: 30rem;
+      padding-left: 7rem;
+      ul {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: flex-start;
+         height: 100%;
+         gap: 2rem;
+         li {
+            a {
+               color: $white;
+               font-size: 3rem;
+               font-family: $main-font;
+               font-weight: 700;
+               text-transform: uppercase;
+               position: relative;
+               &::after {
+                  content: "";
+                  position: absolute;
+                  bottom: 0.2rem;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  width: 75%;
+                  height: 0.2rem;
+                  border-radius: 5px;
+                  background-color: $main-color;
+                  @include prefix(background-image, $main-gradient);
+               }
+            }
+         }
+      }
+   }
+}

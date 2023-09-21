@@ -14,6 +14,7 @@ import {
    faRoad,
    faScrewdriverWrench,
 } from "@fortawesome/free-solid-svg-icons";
+import AffinityLoader from "../AffinityLoader";
 
 interface SkillCardProps {
    type: SkillType;
@@ -53,11 +54,14 @@ const skillCard = ({
 
    return (
       <TiltContainer mass={4} tension={300} friction={20} scale={1.02}>
-         <div className={styles.skillCard} style={{backgroundImage: gradient}}>
+         <div
+            className={styles.skillCard}
+            style={{ backgroundImage: gradient }}
+         >
             <Image src={logo} alt={name} width={100} height={100} />
             <h3>{name}</h3>
             {/* <p>{description}</p> */}
-            <p>{affinity ? affinity : ""}</p>
+            {affinity && <AffinityLoader affinity={affinity} gradient={gradient} />}
             <FontAwesomeIcon
                className={styles.skillType}
                icon={findImgType(type) || faCode}

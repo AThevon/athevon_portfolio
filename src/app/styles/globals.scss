@@ -47,8 +47,11 @@ body {
    }
    .container {
       padding-inline: 4rem;
-      
+      @media screen and (max-width: 1024px) {
+         padding-inline: 2rem;
+      }
+      @media screen and (max-width: 768px) {
+         padding-inline: 1rem;
+      }
    }
 }
-
-

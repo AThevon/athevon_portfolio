@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 import { Changa, Permanent_Marker, Poppins } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Head from "next/head";
+import { DeviceContextProvider } from "@/contexts/DeviceContext";
 
 const mainFont = Poppins({
    weight: ["300", "400", "500", "600", "700"],
@@ -60,11 +60,13 @@ export default function RootLayout({
    children: React.ReactNode;
 }) {
    return (
+      <DeviceContextProvider>
       <html lang="en">
          <body className={fontVariables}>
             {children}
             <ToastContainer />
          </body>
       </html>
+      </DeviceContextProvider>
    );
 }

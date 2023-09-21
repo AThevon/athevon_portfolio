@@ -1,5 +1,6 @@
 "use client";
 
+import { useDeviceContext } from "@/contexts/DeviceContext";
 import styles from "./shape.module.scss";
 import { motion } from "framer-motion";
 
@@ -8,6 +9,7 @@ type RoundShapeProps = {
 };
 
 const Shape = ({ isLeft }: RoundShapeProps) => {
+   const { isMobile } = useDeviceContext();
    const shapeVariants = {
       initialLeft: {
          left: "-50%",
@@ -37,21 +39,23 @@ const Shape = ({ isLeft }: RoundShapeProps) => {
    };
 
    return (
-      <motion.div
-         className={styles.shape_wrapper}
-         variants={shapeVariants}
-         initial={"initial" + (isLeft ? "Left" : "Right")}
-         whileInView={"animate" + (isLeft ? "Left" : "Right")}
-         viewport={{
-            once: true,
-         }}
-      >
-         <div
-            className={`${styles.shape} ${
-               isLeft ? styles.left : styles.right
-            }`}
-         />
-      </motion.div>
+      !isMobile && (
+         <motion.div
+            className={styles.shape_wrapper}
+            variants={shapeVariants}
+            initial={"initial" + (isLeft ? "Left" : "Right")}
+            whileInView={"animate" + (isLeft ? "Left" : "Right")}
+            viewport={{
+               once: true,
+            }}
+         >
+            <div
+               className={`${styles.shape} ${
+                  isLeft ? styles.left : styles.right
+               }`}
+            />
+         </motion.div>
+      )
    );
 };
 

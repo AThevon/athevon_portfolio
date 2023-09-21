@@ -6,12 +6,15 @@ import styles from "./indexes.module.scss";
 import { pages } from "@/data/pages";
 import Image from "next/image";
 import Link from "next/link";
+import { useDeviceContext } from "@/contexts/DeviceContext";
 
 const Indexes = () => {
    const [hovered, setHovered] = useState<number | null>(null);
+   const { isMobile } = useDeviceContext()
    const data = pages.slice(1);
 
    return (
+      !isMobile && (
       <section className={styles.indexes}>
          <motion.h3
             className={styles.title}
@@ -94,6 +97,7 @@ const Indexes = () => {
             </AnimatePresence>
          </ul>
       </section>
+      )
    );
 };
 

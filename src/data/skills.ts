@@ -205,6 +205,7 @@ export const skillsData: SkillsDTO[] = [
       description:
          "WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database.",
       affinity: "50%",
+      gradient: "linear-gradient(-50deg, rgba(59,115,151,0.9) 0%, rgba(33,155,233,0.9) 100%)"
    },
    {
       id: 22,

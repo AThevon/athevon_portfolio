@@ -2,11 +2,20 @@
    margin-top: 4rem;
    margin-inline: auto;
    height: 110vh;
+   @media screen and (max-width: 1024px) {
+      margin-top: 0;
+      height: auto;
+      padding-bottom: 10rem;
+   }
+
    .content_container {
       width: 100%;
       position: relative;
       &:nth-child(1) {
          height: 85vh;
+         @media screen and (max-width: 768px) {
+            height: auto;
+         }
       }
       .spinning_logo_container {
          position: absolute;

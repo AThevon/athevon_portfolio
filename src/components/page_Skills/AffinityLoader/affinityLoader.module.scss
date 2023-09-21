@@ -1,0 +1,41 @@
+@import "@/app/styles/variables.scss";
+@import "@/app/styles/mixins.scss";
+
+.affinityLoader_container {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   .affinityLoader {
+      position: absolute;
+      bottom: 3rem;
+      left: 3rem;
+      width: 2.5rem;
+      height: 12rem;
+      border-radius: 15px;
+      background-color: #232323;
+      overflow: hidden;
+      transition: all .15s ease-out;
+      &_progress {
+         position: absolute;
+         bottom: 0;
+         width: 100%;
+         background-color: #f9f9f9;
+      }
+      &_value {
+         position: absolute;
+         bottom: 3rem;
+         left: 6.5rem;
+         width: 100%;
+         color: $white;
+         font-family: $second-font;
+         font-size: 1.8rem;
+      }
+   }
+   &:hover {
+      .affinityLoader {
+         @include prefix(box-shadow, 0 0 10px 0px #00000055);
+      }
+   }
+}
