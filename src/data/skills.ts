@@ -215,6 +215,7 @@ export const skillsData: SkillsDTO[] = [
       description:
          "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
       affinity: "70%",
+      gradient: "linear-gradient(-50deg, rgba(10,10,10,0.9) 0%, rgba(237,76,43,0.9) 50%, rgba(240,80,47,0.9) 100%)"
    },
    {
       id: 23,
@@ -224,6 +225,7 @@ export const skillsData: SkillsDTO[] = [
       description:
          "GitHub is a provider of Internet hosting for software development and version control using Git.",
       affinity: "70%",
+      gradient: "linear-gradient(-50deg, rgba(8,8,8,0.9) 0%, rgba(89,89,89,0.9) 100%)"
    },
    {
       id: 24,
@@ -233,6 +235,7 @@ export const skillsData: SkillsDTO[] = [
       description:
          "Visual Studio Code is a source-code editor made by Microsoft for Windows, Linux and macOS.",
       affinity: "80%",
+      gradient: "linear-gradient(-50deg, rgba(40,40,40,0.9) 0%, rgba(66,156,214,0.9) 100%)"
    },
    {
       id: 25,
@@ -242,6 +245,7 @@ export const skillsData: SkillsDTO[] = [
       description:
          "Figma is a vector graphics editor and prototyping tool which is primarily web-based.",
       affinity: "70%",
+      gradient: "linear-gradient(-50deg, rgba(59,59,59,0.9) 0%, rgba(243,83,40,0.9) 51%, rgba(35,209,135,0.9) 100%)"
    },
    {
       id: 26,
@@ -251,6 +255,7 @@ export const skillsData: SkillsDTO[] = [
       description:
          "Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc.",
       affinity: "40%",
+      gradient: "linear-gradient(-50deg, rgba(57,171,255,0.9) 0%, rgba(8,37,60,0.9) 100%)"
    },
    {
       id: 27,
