@@ -195,7 +195,8 @@ export const skillsData: SkillsDTO[] = [
       description:
          "Strapi is an open-source headless CMS that is open to any type of front-end environment.",
       affinity: "70%",
-      gradient: "linear-gradient(-50deg, rgba(145,124,253,0.9) 0%, rgba(78,75,253,0.9) 100%)"
+      gradient:
+         "linear-gradient(-50deg, rgba(145,124,253,0.9) 0%, rgba(78,75,253,0.9) 100%)",
    },
    {
       id: 21,
@@ -205,7 +206,8 @@ export const skillsData: SkillsDTO[] = [
       description:
          "WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database.",
       affinity: "50%",
-      gradient: "linear-gradient(-50deg, rgba(59,115,151,0.9) 0%, rgba(33,155,233,0.9) 100%)"
+      gradient:
+         "linear-gradient(-50deg, rgba(59,115,151,0.9) 0%, rgba(33,155,233,0.9) 100%)",
    },
    {
       id: 22,
@@ -215,7 +217,8 @@ export const skillsData: SkillsDTO[] = [
       description:
          "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
       affinity: "70%",
-      gradient: "linear-gradient(-50deg, rgba(10,10,10,0.9) 0%, rgba(237,76,43,0.9) 50%, rgba(240,80,47,0.9) 100%)"
+      gradient:
+         "linear-gradient(-50deg, rgba(10,10,10,0.9) 0%, rgba(237,76,43,0.9) 50%, rgba(240,80,47,0.9) 100%)",
    },
    {
       id: 23,
@@ -225,7 +228,8 @@ export const skillsData: SkillsDTO[] = [
       description:
          "GitHub is a provider of Internet hosting for software development and version control using Git.",
       affinity: "70%",
-      gradient: "linear-gradient(-50deg, rgba(8,8,8,0.9) 0%, rgba(89,89,89,0.9) 100%)"
+      gradient:
+         "linear-gradient(-50deg, rgba(8,8,8,0.9) 0%, rgba(89,89,89,0.9) 100%)",
    },
    {
       id: 24,
@@ -235,7 +239,8 @@ export const skillsData: SkillsDTO[] = [
       description:
          "Visual Studio Code is a source-code editor made by Microsoft for Windows, Linux and macOS.",
       affinity: "80%",
-      gradient: "linear-gradient(-50deg, rgba(40,40,40,0.9) 0%, rgba(66,156,214,0.9) 100%)"
+      gradient:
+         "linear-gradient(-50deg, rgba(40,40,40,0.9) 0%, rgba(66,156,214,0.9) 100%)",
    },
    {
       id: 25,
@@ -245,7 +250,8 @@ export const skillsData: SkillsDTO[] = [
       description:
          "Figma is a vector graphics editor and prototyping tool which is primarily web-based.",
       affinity: "70%",
-      gradient: "linear-gradient(-50deg, rgba(59,59,59,0.9) 0%, rgba(243,83,40,0.9) 51%, rgba(35,209,135,0.9) 100%)"
+      gradient:
+         "linear-gradient(-50deg, rgba(37,37,37,0.9) 0%, rgba(78,78,78,0.9) 100%)",
    },
    {
       id: 26,
@@ -255,7 +261,8 @@ export const skillsData: SkillsDTO[] = [
       description:
          "Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc.",
       affinity: "40%",
-      gradient: "linear-gradient(-50deg, rgba(57,171,255,0.9) 0%, rgba(8,37,60,0.9) 100%)"
+      gradient:
+         "linear-gradient(-50deg, rgba(57,171,255,0.9) 0%, rgba(8,37,60,0.9) 100%)",
    },
    {
       id: 27,
@@ -264,6 +271,8 @@ export const skillsData: SkillsDTO[] = [
       name: "Postman",
       description: "Postman is a collaboration platform for API development.",
       affinity: "85%",
+      gradient:
+         "linear-gradient(-50deg, rgba(255,112,63,0.9) 0%, rgba(115,45,21,0.9) 100%)",
    },
    {
       id: 28,
@@ -273,6 +282,8 @@ export const skillsData: SkillsDTO[] = [
       description:
          "Amazon Web Services is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis.",
       affinity: "40%",
+      gradient:
+         "linear-gradient(-50deg, rgba(37,47,62,0.9) 0%, rgba(255,153,0,0.9) 100%)",
    },
    {
       id: 29,
@@ -282,6 +293,8 @@ export const skillsData: SkillsDTO[] = [
       description:
          "Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.",
       affinity: "40%",
+      gradient:
+         "linear-gradient(-50deg, rgba(9,73,139,0.9) 0%, rgba(20,149,227,0.9) 100%)",
    },
    {
       id: 30,
@@ -290,6 +303,8 @@ export const skillsData: SkillsDTO[] = [
       name: "Firebase",
       description:
          "Firebase is a platform developed by Google for creating mobile and web applications.",
+      gradient:
+         "linear-gradient(-50deg, rgba(247,135,27,0.9) 0%, rgba(255,205,52,0.9) 100%)",
    },
    {
       id: 31,
@@ -298,37 +313,27 @@ export const skillsData: SkillsDTO[] = [
       name: "GraphQL",
       description:
          "GraphQL is an open-source data query and manipulation language for APIs.",
+      gradient:
+         "linear-gradient(-50deg, rgba(230,61,174,0.9) 0%, rgba(142,25,114,0.9) 100%)",
    },
    {
       id: 32,
-      type: SkillType.WILL_LEARN,
-      logo: "/skillsLogos/logo-apollo.svg",
-      name: "Apollo",
-      description:
-         "Apollo is a set of tools and community effort to help you use GraphQL in your apps.",
-   },
-   {
-      id: 33,
       type: SkillType.WILL_LEARN,
       logo: "/skillsLogos/logo-angular.svg",
       name: "Angular",
       description:
          "Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations.",
+      gradient:
+         "linear-gradient(-50deg, rgba(223,21,56,0.9) 0%, rgba(169,29,22,0.9) 100%)",
    },
    {
-      id: 34,
+      id: 33,
       type: SkillType.WILL_LEARN,
       logo: "/skillsLogos/logo-vue.svg",
       name: "Vue.js",
       description:
          "Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications.",
-   },
-   {
-      id: 35,
-      type: SkillType.WILL_LEARN,
-      logo: "/skillsLogos/logo-nuxtjs.svg",
-      name: "Nuxt.js",
-      description:
-         "Nuxt.js is a free and open source web application framework based on Vue.js, Node.js, Webpack and Babel.js.",
+      gradient:
+         "linear-gradient(-50deg, rgba(72,186,135,0.9) 0%, rgba(57,78,99,0.9) 100%)",
    },
 ];

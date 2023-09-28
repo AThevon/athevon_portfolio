@@ -2,8 +2,12 @@
 
 .modal_about {
    width: 90%;
-   margin-top: 100vh;
    margin-inline: auto;
+   margin-top: 14rem;
+   @media (max-width: 1024px) {
+      width: 100%;
+      margin-top: 0rem;
+   }
    h3 {
       font-size: 4rem;
       font-weight: 700;
@@ -21,11 +25,14 @@
       width: 100%;
       display: flex;
       margin-bottom: 8rem;
+      @media (max-width: 768px) {
+         flex-direction: column;
+      }
       & > div {
          width: 100%;
       }
       .left_container {
-         margin-top: 10rem;
+         margin-top: 8rem;
          img {
             object-fit: cover;
             margin-inline: auto;

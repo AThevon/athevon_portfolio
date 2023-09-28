@@ -56,7 +56,7 @@ const ModalAbout = () => {
                   <ul>
                      <li>
                         <Image
-                           src="/logo-athevon.png"
+                           src="/icon-dev.png"
                            alt="Athevon logo"
                            width={50}
                            height={50}
@@ -64,7 +64,7 @@ const ModalAbout = () => {
                      </li>
                      <li>
                         <Image
-                           src="/logo-athevon.png"
+                           src="/icon-hardware.png"
                            alt="Athevon logo"
                            width={50}
                            height={50}
@@ -72,7 +72,7 @@ const ModalAbout = () => {
                      </li>
                      <li>
                         <Image
-                           src="/logo-athevon.png"
+                           src="/icon-videogames.png"
                            alt="Athevon logo"
                            width={50}
                            height={50}
@@ -80,7 +80,7 @@ const ModalAbout = () => {
                      </li>
                      <li>
                         <Image
-                           src="/logo-athevon.png"
+                           src="/icon-guitar.png"
                            alt="Athevon logo"
                            width={50}
                            height={50}

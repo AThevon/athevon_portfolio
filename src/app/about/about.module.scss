@@ -1,19 +1,12 @@
 .about {
    .about_content {
       position: relative;
-      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      img.bg_reverse {
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
-         transform: rotate(180deg);
-         z-index: -1;
+      height: 100vh;
+      @media (max-width: 1024px) {
+         height: auto;
       }
    }
 }

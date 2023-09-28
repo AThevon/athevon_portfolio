@@ -1,17 +1,21 @@
 .skills {
    padding: 4rem;
+   max-width: 180rem;
+   margin-inline: auto;
    .skillsContainer {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-gap: 2rem;
       margin: 0 auto;
-   }
-}
-
-@media (max-width: 512px) {
-   .skills {
-      .skillsContainer {
+      @media (max-width: 1024px) {
+         grid-template-columns: repeat(3, 1fr);
+      }
+      @media (max-width: 768px) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 512px) {
          grid-template-columns: 1fr;
       }
    }
 }
+

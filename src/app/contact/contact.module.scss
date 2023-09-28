@@ -4,8 +4,20 @@
    justify-content: space-between;
    align-items: center;
    padding-inline: 12rem;
+   @media (max-width: 1024px) {
+      height: auto;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4rem;
+      padding-inline: 4rem;
+      margin-block: 8rem;
+   }
    .networks {
       display: flex;
       gap: 2rem;
+      @media (max-width: 1024px) {
+         flex-direction: column;
+         gap: 4rem;
+      }
    }
 }

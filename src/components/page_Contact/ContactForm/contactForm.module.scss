@@ -13,6 +13,9 @@
       flex-direction: column;
       gap: 2rem;
       width: 45rem;
+      @media (max-width: 512px) {
+         width: 28rem;
+      }
       .form_group {
          display: flex;
          flex-direction: column;

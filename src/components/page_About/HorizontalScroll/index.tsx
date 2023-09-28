@@ -4,12 +4,15 @@ import styles from "./horizontalScroll.module.scss";
 import { useRef } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
 import Image from "next/image";
+import { useDeviceContext } from "@/contexts/DeviceContext";
 
 const HorizontalScroll = () => {
    const ref = useRef<HTMLDivElement>(null);
    const { scrollYProgress } = useScroll({
       target: ref,
    });
+
+   const { isMobile, isTablet } = useDeviceContext();
 
    const backgroundX = useTransform(scrollYProgress, [0, 1], ["-2%", "-50%"]);
    const xWrapper = useTransform(scrollYProgress, [0, 1], ["1%", "-300%"]);
@@ -21,6 +24,9 @@ const HorizontalScroll = () => {
    const scale2 = useTransform(scrollYProgress, [0.2, 1], [1, 1.8]);
    const scale3 = useTransform(scrollYProgress, [0.4, 1], [1, 1.6]);
    const scale4 = useTransform(scrollYProgress, [0.6, 1], [1, 1.4]);
+
+
+   if (isMobile || isTablet) return null;
 
    return (
       <section className={styles.horizontal_scroll} ref={ref}>
