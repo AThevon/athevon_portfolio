@@ -3,13 +3,13 @@ import { WorksDTO } from "@/types/worksDTO";
 export const worksData: WorksDTO[] = [
    {
       id: 1,
-      available: false,
+      available: true,
       title: "French Wood Factory",
       description:
          "Configurator for trophies and medals made of wood, for all your events",
       image: "/background_coque_en_bois.jpg",
       logo: "/logo_coque_en_bois.svg",
-      link: "",
+      link: "https://trophee-en-bois-prod-ed7b8b4ff8c3.herokuapp.com/",
       color: "#86BA90",
       capture: "/capture-coqueenbois.png",
       techs: [
