@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { createContext, useContext, useEffect, useState } from "react";
 
@@ -12,8 +12,8 @@ interface DeviceContextProviderProps {
 }
 
 const DeviceContext = createContext<DeviceContextType>({
-   isMobile: true,
-   isTablet: true,
+   isMobile: false,
+   isTablet: false,
 });
 
 export const useDeviceContext = () => {
@@ -33,22 +33,25 @@ export const DeviceContextProvider = ({
    const [isTablet, setIsTablet] = useState(false);
 
    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-      setIsTablet(window.innerWidth > 768 && window.innerWidth <= 1024);
+      const viewportWidth = document.documentElement.clientWidth;
+      console.log("Viewport width:", viewportWidth);
+      setIsMobile(viewportWidth <= 768);
+      setIsTablet(viewportWidth > 768 && viewportWidth <= 1024);
+      console.log("isMobile:", isMobile);
+      console.log("isTablet:", isTablet);
    };
 
    // Add event listener to handle window resize
    useEffect(() => {
       // Check for client-side rendering
-      if (typeof window !== "undefined") {
-         handleResize();
-         window.addEventListener("resize", handleResize);
+      handleResize();
+      window.addEventListener("resize", handleResize);
 
-         return () => {
-            window.removeEventListener("resize", handleResize);
-         };
-      }
+      return () => {
+         window.removeEventListener("resize", handleResize);
+      };
    }, []);
+
    return (
       <DeviceContext.Provider value={{ isMobile, isTablet }}>
          {children}
