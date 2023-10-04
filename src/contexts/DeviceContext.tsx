@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React, { createContext, useContext, useEffect, useState } from "react";
 
@@ -12,8 +12,8 @@ interface DeviceContextProviderProps {
 }
 
 const DeviceContext = createContext<DeviceContextType>({
-   isMobile: false,
-   isTablet: false,
+   isMobile: true,
+   isTablet: true,
 });
 
 export const useDeviceContext = () => {
