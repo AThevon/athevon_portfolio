@@ -1,3 +1,5 @@
+"use client"
+
 import styles from "./header.module.scss";
 import Logo from "./Logo";
 import Navlink from "./NavLink";

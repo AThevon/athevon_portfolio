@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import styles from "./burgerMenu.module.scss";
 import { useState } from "react";
