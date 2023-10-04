@@ -17,7 +17,9 @@ const Header = () => {
             </div>
          )}
          <Logo />
-         {!isMobile && !isTablet ? (
+         {isMobile || isTablet ? (
+            <BurgerMenu />
+         ) : (
             <nav>
                <ul className={styles.desktop_nav}>
                   {data.map((link, index) => (
@@ -25,8 +27,6 @@ const Header = () => {
                   ))}
                </ul>
             </nav>
-         ) : (
-            <BurgerMenu />
          )}
       </header>
    );
