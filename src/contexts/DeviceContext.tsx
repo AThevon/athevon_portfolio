@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { createContext, useContext, useEffect, useState } from "react";
 
@@ -11,7 +11,10 @@ interface DeviceContextProviderProps {
    children: React.ReactNode;
 }
 
-const DeviceContext = createContext<DeviceContextType | undefined>(undefined);
+const DeviceContext = createContext<DeviceContextType>({
+   isMobile: false,
+   isTablet: false,
+});
 
 export const useDeviceContext = () => {
    const context = useContext(DeviceContext);
