@@ -60,13 +60,13 @@ export default function RootLayout({
    children: React.ReactNode;
 }) {
    return (
-      <DeviceContextProvider>
       <html lang="en">
          <body className={fontVariables}>
+         <DeviceContextProvider>
             {children}
             <ToastContainer />
+      </DeviceContextProvider>
          </body>
       </html>
-      </DeviceContextProvider>
    );
 }
