@@ -39,13 +39,16 @@ export const DeviceContextProvider = ({
 
    // Add event listener to handle window resize
    useEffect(() => {
-      handleResize();
-      window.addEventListener("resize", handleResize);
-      return () => {
-         window.removeEventListener("resize", handleResize);
-      };
-   }, []);
+      // Check for client-side rendering
+      if (typeof window !== "undefined") {
+         handleResize();
+         window.addEventListener("resize", handleResize);
 
+         return () => {
+            window.removeEventListener("resize", handleResize);
+         };
+      }
+   }, []);
    return (
       <DeviceContext.Provider value={{ isMobile, isTablet }}>
          {children}
