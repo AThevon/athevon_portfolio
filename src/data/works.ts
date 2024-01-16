@@ -3,7 +3,7 @@ import { WorksDTO } from "@/types/worksDTO";
 export const worksData: WorksDTO[] = [
    {
       id: 1,
-      available: true,
+      available: false,
       title: "French Wood Factory",
       description:
          "Configurator for trophies and medals made of wood, for all your events",
