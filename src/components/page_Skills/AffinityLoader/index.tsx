@@ -13,7 +13,6 @@ const AffinityLoader = ({ affinity, gradient }: AffinityLoaderProps) => {
 
    // if value end by .0 (ex: 5.0), remove the .0
    if (affinityValue.slice(-2) === ".0") {
-      console.log("remove .0");
       affinityValue = affinityValue.slice(0, -2);
    }
 

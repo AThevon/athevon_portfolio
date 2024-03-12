@@ -8,7 +8,6 @@ export enum SkillType {
 }
 
 export type SkillsDTO = {
-   id: number;
    type: SkillType;
    logo: string;
    name: string;
