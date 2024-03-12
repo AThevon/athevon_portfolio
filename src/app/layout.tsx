@@ -61,12 +61,12 @@ export default function RootLayout({
 }) {
    return (
       <DeviceContextProvider>
-      <html lang="en">
-         <body className={fontVariables}>
-            {children}
-            <ToastContainer />
-         </body>
-      </html>
+         <html lang="en">
+            <body className={fontVariables}>
+               {children}
+               <ToastContainer />
+            </body>
+         </html>
       </DeviceContextProvider>
    );
 }
